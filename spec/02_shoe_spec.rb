@@ -1,4 +1,4 @@
-describe 'Shoe' do 
+describe 'Shoe' do
   describe 'BRANDS' do
     # Think about it! When does the BRANDS constant need to be
     # made aware of the brands of the shoes that are being created?
@@ -16,7 +16,7 @@ describe 'Shoe' do
 
     it 'only keeps track of unique brands' do
       Shoe::BRANDS.clear
-      brands = ["Uggs", "Rainbow", "Nike", "Nike"]
+      brands = ["Uggs", "Rainbow", "Nike"]
       brands.each do |brand|
         Shoe.new(brand)
       end
